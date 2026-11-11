@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BUSET LAN hosting demo</title>
+  <meta name="description" content="A real two-phone demonstration of BUSET's local game hosting and Android foreground notification.">
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,sans-serif;background:#14261c;color:#f5f1e7}
+    body{margin:0;padding:24px}
+    main{max-width:900px;margin:auto}
+    a{color:#deb453}
+    h1{font-size:clamp(2rem,5vw,3.4rem);margin:.7em 0 .2em}
+    p,li{line-height:1.6}
+    video{display:block;width:min(100%,480px);max-height:80vh;margin:24px auto;border:2px solid #deb453;border-radius:16px;background:#000}
+    .note{color:#c9d3cb}
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="../">&larr; BUSET home</a></p>
+    <h1>LAN hosting demo</h1>
+    <p>This video documents the Android local game host service for Google Play review. It uses two real phones: an A22 hosting over its hotspot and an A31 joining the same game.</p>
+    <video controls playsinline preload="metadata" aria-label="BUSET LAN hosting demonstration">
+      <source src="../assets/buset-lan-host-demo.mp4" type="video/mp4">
+      Your browser cannot play this video. <a href="../assets/buset-lan-host-demo.mp4">Download the MP4.</a>
+    </video>
+    <p class="note">The demo shows the host starting a room, a second phone joining, Android's ongoing LAN host notification with its Stop hosting action, and the service stopping. The local test build has Full features enabled so the review flow can be shown without a purchase.</p>
+    <p><a href="../assets/buset-lan-host-demo.mp4">Open video directly</a></p>
+  </main>
+</body>
+</html>
